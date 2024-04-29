@@ -15,14 +15,14 @@ def main():
 
     user_proxy = autogen.UserProxyAgent(
         name="user",
-        human_input_mode="TERMINATE",
+        human_input_mode="ALWAYS",
         code_execution_config={
             "work_dir": "coding",
             "use_docker": False
         }
     )
 
-    user_proxy.initiate_chat(assistant, message="Give a chart of the number of huskies adopted in london")
+    user_proxy.initiate_chat(assistant, message="Plot a chart of META and TESLA stock price change please.")
 
 
 if __name__ == "__main__":
