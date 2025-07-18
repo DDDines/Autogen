@@ -39,7 +39,7 @@ source .venv/bin/activate
 Install the necessary Python packages using pip:
 
 ```bash
-pip install pyautogen
+pip install ag2
 ```
 
 ### 5. Configuration
